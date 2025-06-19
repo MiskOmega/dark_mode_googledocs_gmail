@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Mode For Docs/Gmail",
+  "version": "1.0",
+  "description": "Inverts Docs and Gmail for dark mode effect",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://docs.google.com/*",
+    "https://mail.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/*",
+        "https://mail.google.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
