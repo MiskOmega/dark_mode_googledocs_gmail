@@ -1,3 +1,2 @@
-# dark_mode_googledocs_gmail
+# Chrome Extension Dark Mode for Docs and Gmail
 Inverts Docs and Gmail for dark mode effect
-This is a Google Chrome Extension
